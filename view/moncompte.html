@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<title>accueil</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../css/acceuil.css"/>
+<style>
+body > .container-fluid{
+    padding-top: 50px;
+}
+.trip-green{
+    color: #4CD59B;
+}
+.page-title {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #BFBFBF;
+	color :white;
+}
+.light-grey-background-load-iframe{
+    background-color: #fff;
+}
+.light-grey-background {
+    background-color: #58595B;
+    color: #fff;
+}
+
+.top-wrapper{
+    background-color: #333333;
+}
+
+.top-wrapper .nav-tabs {
+    border:0;
+}
+
+.top-wrapper .nav-tabs li{
+    margin:10px 10px 0 0px;
+    padding:10px 20px;
+    background-color:#58595B;
+    opacity: 0.6;
+}
+.top-wrapper .nav-tabs li.selected{
+    opacity: 1;
+}
+
+.top-wrapper .nav-tabs a:hover{
+    text-decoration: none;
+}
+
+.top-wrapper .nav-tabs h2{
+    margin:0;
+}
+
+.top-wrapper .nav-tabs li#add_radio_request_link{
+    padding:0;
+    background-color:transparent;
+    opacity: 1;
+}
+
+.top-wrapper .nav-tabs li#add_radio_request_link a{
+    background: transparent;
+    border:none;
+    color:#00FFAE;
+    font-size: 1.2em;
+}
+
+.row#add_radio_request_link{
+    padding:20px 0 0;
+}
+
+.main-wrapper{
+    height:100%;
+    padding-top:0px;
+    padding-bottom: 80px;
+}
+
+#right-content{
+    height:100%;
+    padding-top: 20px;
+
+}
+
+#left-content{
+    padding-top:85px;
+    height:100%;    
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+    background-color: #EF0739;
+    border-color: #EF0739;
+}
+
+.list-group-item{
+    background-color: #A7A9AC;
+    border: 1px solid #A7A9AC;
+}
+
+
+.page-title{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+</style>
+</head>
+
+
+<body id="body_id" class="light-grey-background " cz-shortcut-listen="true" style="">
+<nav id="nav_bar_id" class="navbar navbar-default navbar-fixed-top radly-red-background white-text">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="../images/logo.png" style="height:50px; width:50px"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="header-radly"><a href="accueil.html">Accueil</a></li>
+		<li class="header-support"><a href="plans.html">Bon Plans </a></li>
+		<li class="header-support active"><a href="#">Mon compte </a></li>
+		<li class="header-support"><a href="bienvenue.html">Sortir </a></li>
+    </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/" class="cls-logout" style="display: none;">Login</a></li>
+        </ul>
+        </div>                <!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+<div class="container-fluid content-wrapper">
+    <div class="row top-wrapper text-center">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <h1 class="page-title">Mon Compte</h1>
+        </div>
+    </div>
+    <div class="row main-wrapper">
+                                                             
+      <div class="col-sm-12 light-grey-background" id="right-content">
+                     
+            <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" id="my-account-container">
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>Nom:</label>     Oucema                </div>
+                    <div class="col-sm-6">
+                        <label>Nom de famille:</label>   MHETLI                  </div>                
+                    <div class="col-sm-6">
+                        <label>Pays:</label>    Siliana                 </div>
+                    <div class="col-sm-6">
+                        <label>Langue:</label> Francais                    </div>
+                    <div class="col-sm-12">
+                        <a class="trip-green" href="/myaccount-edit">Modifier les informations du compte</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label>E-mail:</label> oucema.mhatli@gmail.com                       <a class="trip-green pull-right" href="/edit-email">Modifier l'adresse e-mail</a>
+                    </div>
+                </div> 
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+					 <label>Mot de passe:</label> 123456
+                        <a class="trip-green pull-right" href="/edit-password">Modifier le mot de passe</a>
+                    </div>
+                </div>                 
+                
+            </div>              
+      </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+  
+        
+                        
+
+        

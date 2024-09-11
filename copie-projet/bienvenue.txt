@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bienvenue</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+body{
+background-image:url("ch.jpg");
+
+}
+
+</style>
+</head>
+<body>
+<div class="c1">
+<form action="formulaire.html" methode="post" name="f1">
+<fieldset>
+<legend>connecter-vous</legend>
+<table>
+<tr>
+<td><label for"t1">pseuodo</label>
+<input type="text" name"t1" value="ecrire votre pseuodo"/></td>
+<td><label for"t2">password</label>
+<input type="password" name="t2" /></td>
+<td> <button type="button" > se connecter</button> </td>
+</tr>
+<tr>
+<td ><input type="submit" name="b1"value="creer votre compte" /> </td>
+</tr>
+</table>
+</fieldset>
+</form>
+</div>
+<a href="accueil.html"><img src="logo.png" alt="logo de societe" title="cliquez pour decouvrir nos offres" style="width:1200px;height:500px" /> </a>
+<ul>
+<li><a href= "agence@gmail.com"><img src="logog.png" style="width:12px;height:12px"/> nous contacter </a> </li>
+<li><a href= "defhsdjkf"><img src="logf.png" style="width:12px;height:12px"  />notre page facebook </a> </li>
+<li><a href="formulaire"><img src="logos.jpeg" style="width:14px;height:14px"/>instagram</a></li>
+</ul>
+</body>
+
+</html>

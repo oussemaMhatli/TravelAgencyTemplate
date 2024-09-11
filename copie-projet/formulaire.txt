@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>formulaire</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1>organisez le voyage parfait</h1>
+<div class="c3">
+<form action="accueil.html" name="f1">
+<fieldset>
+<legend>informations personnel</legend>
+<table>
+<tr>
+<td>
+<label for"t100"></label>
+<input type="text" name="t100" value="votre nom"></td>
+<td>
+<label for"t2"></label>
+<input type="text" name="t2" value="votre prenom"></td>
+<td>
+<label for"t3"></label>
+<input type="date" name="t3" ></td>
+</tr>
+<tr>
+<td>
+<input type="radio" name"r1"/>
+<label for"r1" class="c4">hotel</label></td>
+<td>
+<input type="radio" name"r2"/>
+<label for"r2" class="c4">vols</label></td>
+<td>
+<input type="radio" name"r3"/>
+<label for"r3" class="c4">location de vacances</label></td>
+</tr>
+<tr>
+<td>
+<input type="radio" name"r4"/>
+<label for"r4" class="c4">restaurants</label></td>
+<td>
+<input type="radio" name"r5"/>
+<label for"r5" class="c4">destinaions</label></td>
+<td>
+<input type="radio" name"r6"/>
+<label for"r6" class="c4">location de voiture</label></td>
+</tr>
+<tr>
+<td>
+<input type="email" name="t1" value="E-mail"/>
+</td>
+<td>
+<input type="text" name="t1" value="ville ou nom de l'hotel"/>
+</td>
+<td><input type="date" name="d1"></td>
+</tr>
+
+
+</table>
+<div class="c1">
+<span class="c4"><input type="submit" name="s1"value="trouver des hotels"/></span>
+<input type="reset" name="s1" value="annuler"/>
+</div>
+</fieldset>
+</form>
+</div>
+</body>
+</html>

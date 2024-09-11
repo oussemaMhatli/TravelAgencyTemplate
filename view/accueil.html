@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<title>accueil</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="../css/acceuil.css"/>
+</head>
+<body class="skin-blue">
+<nav id="nav_bar_id" class="navbar navbar-default navbar-fixed-top radly-red-background white-text">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="../images/logo.png" style="height:50px; width:50px"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="header-radly active"><a href="">Accueil</a></li>
+		<li class="header-support"><a href="plans.html">Bons Plans</a></li>
+		<li class="header-support"><a href="moncompte.html">Mon compte </a></li>
+		<li class="header-support"><a href="bienvenue.html">Sortir </a></li>
+    </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/" class="cls-logout" style="display: none;">Login</a></li>
+        </ul>
+        </div>                <!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+		<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:10%;margin-top:-30px;">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a class="w3-bar-item w3-button" onclick="getcountrydata('siliana')" title="aller à la section 1" >siliana</a>
+    <a class="w3-bar-item w3-button" onclick="getcountrydata('Djerba')" title="aller à la section 1" >Djerba</a>
+ <a class="w3-bar-item w3-button" onclick="getcountrydata('monastir')" title="aller à la section 2" >monastir</a>
+ <a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 3" >manouba</a> 
+ <a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 4" >mahdia</a>
+ <a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 2" >ariena</a>
+ <a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 3" >tunis</a>
+ <a class="w3-bar-item w3-button"  onclick="getcountrydata()" title="aller à la section 4">ben arous</a>
+ <a class="w3-bar-item w3-button"  onclick="getcountrydata()" title="aller à la section 5">benzart</a>
+  <a class="w3-bar-item w3-button" onclick="getcountrydata()"  title="aller à la section 1">soussa</a> 
+ <a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 2">tozeur</a>
+ <a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 3">nabeul</a>
+<a class="w3-bar-item w3-button"  onclick="getcountrydata()" title="aller à la section 3">kairouane</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 4">jandouba</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 5">zaghwen</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 1">beja</a> 
+<a class="w3-bar-item w3-button" onclick="getcountrydata()"  title="aller à la section 2">sidi bouzid</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()"  title="aller à la section 3">sfax</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 4">gebes</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 5">gbeli</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 1">gasserine</a>
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 2">gafsa</a>
+<a class="w3-bar-item w3-button"  onclick="getcountrydata()" title="aller à la section 4">kef</a> 
+<a class="w3-bar-item w3-button" onclick="getcountrydata()" title="aller à la section 5">mednine</a>
+</div>
+<div style="margin-left:15%;margin-top:70px;" id="listcountries">
+<img hidden src ="" id="imagecountry" style="background-color:black"></img>
+<video width="98%" id="videoacceuil" controls autoplay="true" style="height:600px; !important;width:1350px !important">
+  <source src="../images/voyage.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+	
+<script>
+(function() {
+//document.getElementById("videoacceuil").play();
+
+})();
+function getcountrydata(country){
+document.getElementById("videoacceuil").style.display='none';
+document.getElementById("imagecountry").style.display='block';
+appendImage(country);
+}
+function appendImage(country){
+document.getElementById("imagecountry").src="../images/"+country+".PNG";
+document.getElementById("imagecountry").style.display='block';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<title>accueil</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../css/acceuil.css"/>
+<style>
+body > .container-fluid{
+    padding-top: 50px;
+}
+.trip-green{
+    color: #4CD59B;
+}
+.btn-green{
+background-color:#4CD59B;
+}
+.page-title {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #BFBFBF;
+	color :white;
+}
+.light-grey-background-load-iframe{
+    background-color: #fff;
+}
+.light-grey-background {
+    background-color: #58595B;
+    color: #fff;
+}
+
+.top-wrapper{
+    background-color: #333333;
+}
+
+.top-wrapper .nav-tabs {
+    border:0;
+}
+
+.top-wrapper .nav-tabs li{
+    margin:10px 10px 0 0px;
+    padding:10px 20px;
+    background-color:#58595B;
+    opacity: 0.6;
+}
+.top-wrapper .nav-tabs li.selected{
+    opacity: 1;
+}
+
+.top-wrapper .nav-tabs a:hover{
+    text-decoration: none;
+}
+
+.top-wrapper .nav-tabs h2{
+    margin:0;
+}
+
+.top-wrapper .nav-tabs li#add_radio_request_link{
+    padding:0;
+    background-color:transparent;
+    opacity: 1;
+}
+
+.top-wrapper .nav-tabs li#add_radio_request_link a{
+    background: transparent;
+    border:none;
+    color:#00FFAE;
+    font-size: 1.2em;
+}
+
+
+
+</style>
+</head>
+
+
+<body id="body_id" class="light-grey-background " cz-shortcut-listen="true" style="">
+<nav id="nav_bar_id" class="navbar navbar-default navbar-fixed-top radly-red-background white-text">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="../images/logo.png" style="height:50px; width:50px"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+		<li class="header-support"><a href="bienvenue.html">Login </a></li>
+    </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/" class="cls-logout" style="display: none;">Login</a></li>
+        </ul>
+        </div>                <!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+<div class="container-fluid content-wrapper">
+    <div class="row top-wrapper text-center">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <h1 class="page-title">S'inscrire</h1>
+        </div>
+    </div>
+    <div class="row main-wrapper">
+                                                             
+      <div class="col-sm-12 light-grey-background" id="right-content">  
+<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" id="broadcasters-registration-form-container">
+                <form class="user-registration-form" id="user-registration" method="POST" action="/Users/asus/Desktop/Nouveau%20dossier%20(5)/projet/projet/view/bienvenue.html">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label>Nom <span class="required">*</span></label>
+                          <input type="text" class="form-control" id="usr_name" name="user_name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Nom de famille <span class="required">*</span></label>
+                          <input type="text" class="form-control" id="usr_surname" name="user_lastname">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label>E-mail <span class="required">*</span></label>
+                          <input type="text" class="form-control" id="usr_email" name="user_mail">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Retaper l'e-mail <span class="required">*</span></label>
+                          <input type="text" class="form-control" id="usr_email_rtp">
+                        </div>
+                    </div>                        
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label>Mot de passe <span class="required">*</span></label>
+                          <div class="input-group">
+                              <input type="password" class="form-control" id="usr_password" name="user_password">
+                            <div class="input-group-addon" id="showpassword"><i class="fa fa-eye" id="show-hide-password"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Retaper le mot de passe<span class="required">*</span></label>
+                          <div class="input-group">
+                            <input type="password" class="form-control" id="usr_password_rtp">
+                            <div class="input-group-addon" id="showrtppassword"><i class="fa fa-eye" id="show-hide-rtppassword"></i></div>
+                          </div>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label>Pays <span class="required">*</span></label>
+                          <select class="form-control" id="usr_country" name="user_country">
+                            <option value="-1">Choisir un pays</option>
+                                                         
+                          <option value="48">Albania</option><option value="22">Armenia</option><option value="4">Australia</option><option value="19">Austria</option><option value="23">Azerbaijan</option><option value="2">Belgium</option><option value="24">Bosnia</option><option value="3">Brazil</option><option value="10">Bulgaria</option><option value="26">Croatia</option><option value="27">Cyprus</option><option value="28">Czech</option><option value="13">Denmark</option><option value="29">Estonia</option><option value="15">Finland</option><option value="8">France</option><option value="30">Georgia</option><option value="9">Germany</option><option value="31">Greece</option><option value="32">Hungary</option><option value="33">Iceland</option><option value="34">Ireland</option><option value="35">Israel</option><option value="1">Italy</option><option value="5">Japan</option><option value="36">Kazakhstan</option><option value="37">Latvia</option><option value="38">Lithuania</option><option value="39">Malta</option><option value="40">Montenegro</option><option value="16">Netherlands</option><option value="12">Norway</option><option value="20">Poland</option><option value="41">Portugal</option><option value="6">Romania</option><option value="42">Russia</option><option value="43">Serbia</option><option value="44">Slovakia</option><option value="45">Slovenia</option><option value="47">South Africa</option><option value="17">Spain</option><option value="14">Sweden</option><option value="18">Switzerland</option><option value="21">Turkey</option><option value="46">Ukraine</option><option value="11">United Kingdom</option><option value="7">USA</option></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Langue <span class="required">*</span></label>
+                          <select class="form-control" id="usr_language" name="user_language">
+                            <option value="-1">Choisir une langue</option>
+                                                         
+                          <option value="az">Azərbaycan</option><option value="bs">Bosanski</option><option value="cs">čeština</option><option value="da">Dansk</option><option value="de">Deutsche</option><option value="et">Eesti</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="el">Greek</option><option value="hr">Hrvatski</option><option value="ga">Irish</option><option value="is">Íslensku</option><option value="it">Italiano</option><option value="lv">Latviešu</option><option value="lt">Lietuviškai</option><option value="hu">Magyar</option><option value="mt">Malti</option><option value="nl">Nederlandse</option><option value="no">Norsk </option><option value="pl">Polskie</option><option value="pt">Português</option><option value="ro">Romana</option><option value="sq">Shqiptar</option><option value="sl">Slovenščina</option><option value="sk">Slovenský</option><option value="fi">Suomalainen</option><option value="sv">Svenska</option><option value="tr">Türk</option><option value="bg">български</option><option value="ru">русский</option><option value="sr">Српски</option><option value="uk">Українська</option><option value="kk">қазақ тілінде</option><option value="hy">հայերեն</option><option value="he">עִברִית</option><option value="ka">ქართული</option><option value="ja">日本語</option></select>
+                        </div>
+                    </div>
+                    <div class="checkbox" id="errorcheckbox_termsConditions">
+                      <label>
+                          <input type="checkbox" id="br_termes_conditions"><span class="required">*</span> J'accepte les <a class="trip-green" target="_blank" href="/terme-use">Conditions d'utilisation du projet Voyage </a>
+                      </label>
+                    </div>                    
+                    <div class="text-center row clearfix">
+                         <input id="btn_sub"  class="btn btn-green" value="S'inscrire">
+                  
+                    </div>
+                    
+                </form>
+            </div>              	  
+                     
+      </div>
+    </div>
+
+</div>
+<script>
+ document.getElementById("btn_sub").onclick = function () {
+        location.href = "bienvenue.html";
+    };
+</script>
+</body>
+</html>
+
+  
+        
+                        
+
+        

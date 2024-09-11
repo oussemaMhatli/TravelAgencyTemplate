@@ -1,0 +1,48 @@
+.c1{
+margin-left:800px;	
+
+	
+}
+body{
+	background-image:url("../images/fr.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	}
+	html{
+		height:100%;
+	}
+	.bienvenu-cls{
+		background-image:url{"../images/ch.jpg"}
+	}
+	.bienvenu-cls a{
+		width:1200px;height:500px
+	}
+.c2{
+	margin-left:50px;
+	}
+h1{
+font-size:50px;
+color:red;
+margin-top:200px;
+font-family:serif;
+font-style:italic;
+text-decoration:underline;
+}	
+.c3{
+margin-left:100px;	
+	
+}
+.c4
+{
+	color:pink;
+	text-decoration:underline;
+}
+.c5
+{
+	color:blue;
+	text-decoration:underline;
+	font-style:italic;
+	background-color:pink;
+	border-radius: 4px;
+	
+}
